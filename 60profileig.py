@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 
-URL = "https://www.instagram.com/pr_ichatt/"
+#URL = "ลิงค์ IG"
 request = requests.get(URL)
 s = BeautifulSoup(request.text, "html.parser")
 meta = s.find("meta", property="og:description")
